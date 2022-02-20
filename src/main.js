@@ -2,8 +2,12 @@ const { BrowserWindow } = require('electron');
 
 function createWindow() {
 	let win = new BrowserWindow({
-		width: 800,
+		width: 1000,
 		height: 600,
+		resizable: false,
+		maximizable: false,
+		titleBarStyle: "hiddenInset",
+		frame: false,
 		webPreferences: {
 			nodeIntegration: true
 		}

@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html class="draggable">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<title>Lexical Analyzer</title>
 		<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" media="all">
-		<link rel="stylesheet" href="../css/index.css" type="text/css" media="all">
+		<link rel="stylesheet" href="../css/index.css">
+		<script src="https://kit.fontawesome.com/189e4b5d43.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<h1>Hello world!</h1>
+		<div class="container">
+			<div class="row my-4">
+				<div class="col my-5 mx-3 card">
+					<div class="card-body">
+						<h2 class="card-tittle">Lexical Specification</h2>
+						<div class="input-group mb-3">
+						<input type="text" id="pathfile" class="form-control" placeholder="Path file" disabled>
+						<button class="btn btn-outline-primary" id="btn-path-file"><i class="fa-solid fa-file-import"></i></button>
+					</div> <!--Input-1-->
+					<div class="input-group mb-3">
+						<input type="text" id="outputdirectory" class="form-control" placeholder="Output Directory" disabled>
+						<button class="btn btn-outline-primary" id="btn-path-file"><i class="fa-solid fa-file-export"></i></button>
+					</div> <!--Input-2-->
+					</div> <!--Card-Body-->
+				</div> <!--Col-1-->
+				<div class="col my-5 card">
+					<div class="card-body">
+						<h2 class="card-tittle">Settings</h2>
+						<div class="card-body">
+							<button class="btn btn-lg btn-danger"><i class="fa-solid fa-circle-xmark"></i></button>
+							<button class="btn btn-lg btn-success"><i class="fa-solid fa-circle-check"></i></button>
+							<button class="btn btn-lg btn-secondary"><i class="fa-solid fa-gear"></i></button>
+							<button class="btn btn-lg btn-warning"><i class="fa-solid fa-circle-stop"></i></button>
+							<button class="btn btn-lg btn-info"><i class="fa-solid fa-circle-info"></i></button>
+						</div>
+					</div> <!--Card-Body-->
+				</div> <!--Col-2-->
+			</div> <!--Row-1-->
+			<div class="row">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Messages</h4>
+						<textarea class="form-control" rows="5" readonly></textarea>
+					</div> <!--Card-body-->
+				</div> <!--Card-->
+			</div> <!--Row-2-->
+		</div> <!--Container-->
 	</body>
 </html>
