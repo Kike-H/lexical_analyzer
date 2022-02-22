@@ -20,7 +20,7 @@
 					</div> <!--Input-1-->
 					<div class="input-group mb-3">
 						<input type="text" id="outputdirectory" class="form-control" placeholder="Output Directory" disabled>
-						<button class="btn btn-outline-primary" id="btn-path-file"><i class="fa-solid fa-file-export"></i></button>
+						<button class="btn btn-outline-primary" id="btn-output-directory"><i class="fa-solid fa-file-export"></i></button>
 					</div> <!--Input-2-->
 					</div> <!--Card-Body-->
 				</div> <!--Col-1-->
@@ -29,7 +29,7 @@
 						<h2 class="card-tittle">Settings</h2>
 						<div class="card-body">
 							<button class="btn btn-lg btn-danger"><i class="fa-solid fa-circle-xmark"></i></button>
-							<button class="btn btn-lg btn-success"><i class="fa-solid fa-circle-check"></i></button>
+							<button id="btn-s" class="btn btn-lg btn-success"><i class="fa-solid fa-circle-check"></i></button>
 							<button class="btn btn-lg btn-secondary"><i class="fa-solid fa-gear"></i></button>
 							<button class="btn btn-lg btn-warning"><i class="fa-solid fa-circle-stop"></i></button>
 							<button class="btn btn-lg btn-info"><i class="fa-solid fa-circle-info"></i></button>
@@ -40,11 +40,13 @@
 			<div class="row">
 				<div class="card">
 					<div class="card-body">
-						<h4 class="card-title">Messages</h4>
-						<textarea class="form-control" rows="5" readonly></textarea>
+						<h4 class="card-title">View</h4>
+						<textarea id="view" class="form-control" rows="5" readonly></textarea>
 					</div> <!--Card-body-->
 				</div> <!--Card-->
 			</div> <!--Row-2-->
 		</div> <!--Container-->
+		<script src="../js/select_directories.js"></script>
+		<script src="../js/lexical.js"></script>
 	</body>
 </html>

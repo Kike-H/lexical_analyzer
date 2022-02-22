@@ -1,4 +1,7 @@
 const { BrowserWindow } = require('electron');
+const { enable } = require('@electron/remote/main');
+require('@electron/remote/main').initialize();
+
 
 function createWindow() {
 	let win = new BrowserWindow({
@@ -9,11 +12,14 @@ function createWindow() {
 		titleBarStyle: "hiddenInset",
 		frame: false,
 		webPreferences: {
-			nodeIntegration: true
+			nodeIntegration: true,
+			contextIsolation: false,
+			
 		}
 	});
 
 	win.loadFile("src/ui/html/index.html");
+	enable(win.webContents);
 }
 
 module.exports = {
