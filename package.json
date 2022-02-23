@@ -5,13 +5,37 @@
   "main": "src/index.js",
   "scripts": {
     "start": "electron .",
+		"pack": "build --dir",
+		"dist": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Manuel E. Hernandez Duarte",
+  "license": "MIT",
+	"build": {
+		"appId": "lexical-analyzerv1",
+		"asar": true,
+		"dmg":{
+			"contents": [
+				{
+					"x": 110,
+					"y": 150
+				},
+				{
+					"x": 240,
+					"y": 150,
+					"type": "link",
+					"path": "/Applications"
+				}
+			]
+		},
+		"win": {
+			"target": "NSIS"
+		}
+	},
   "devDependencies": {
     "electron": "^17.0.1",
+    "electron-builder": "^22.14.13",
     "electron-reload": "^2.0.0-alpha.1",
     "electron-reloader": "^1.2.2"
   },
