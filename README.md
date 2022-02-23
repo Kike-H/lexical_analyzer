@@ -9,7 +9,7 @@ Created by:
 
 ## Downloads
 
-You can download the app for [Windows]() and for [MacOs]()
+You can download the app for [Windows](https://drive.google.com/drive/folders/1Y-dw8oVot79vtcHmooV0vIqu4Rnt-qel?usp=sharing) and for [MacOs](https://drive.google.com/drive/folders/1Y-dw8oVot79vtcHmooV0vIqu4Rnt-qel?usp=sharing)
 
 ## Usage
 
@@ -27,6 +27,15 @@ npm i
 npm start
 ```
 
+### Example of code to analyze
+
+```java
+public void sum(int num1, int num2) {
+	int sum;
+	sum = num1 + num2;
+	System.out.println(sum);
+}
+```
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
