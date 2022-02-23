@@ -9,8 +9,6 @@ function createWindow() {
 		height: 600,
 		resizable: false,
 		maximizable: false,
-		titleBarStyle: "hiddenInset",
-		frame: false,
 		webPreferences: {
 			nodeIntegration: true,
 			contextIsolation: false,
